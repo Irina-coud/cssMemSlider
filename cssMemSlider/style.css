@@ -135,3 +135,15 @@ html {
     border: 3px solid yellow;
     background: transparent;
 }
+#r1:checked ~ .slider .slider-item {
+    transform: translateX(0);
+}
+#r2:checked ~ .slider .slider-item {
+    transform: translateX(-100%);
+}
+#r3:checked ~ .slider .slider-item {
+    transform: translateX(-200%);
+}
+#r4:checked ~ .slider .slider-item {
+    transform: translateX(-300%);
+}
