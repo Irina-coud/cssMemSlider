@@ -29,6 +29,8 @@ h6 {
 }
 img {
     vertical-align: top;
+    max-width: 100%;
+    height: auto;
 }
 html,
 body {
@@ -55,6 +57,9 @@ html {
     scroll-behavior: smooth;
 }
 /*  */
+html {
+    font-size: 62.5%;
+}
 .radio {
     display: none;
 }
@@ -70,25 +75,30 @@ html {
 .slider {
     display: flex;
     overflow-x: hidden;
-    width: 42.9rem;
+    width: 100%;
+    max-width: 60rem;
     margin: 0 auto 2% auto;
 }
 .slider-footer {
     display: flex;
-    width: 42.9rem;
     margin: 0 auto;
     justify-content: space-between;
     overflow: hidden;
+    width: 100%;
+    max-width: 60rem;
 }
 .slider-item {
     transition: all 0.6s ease 0s;
+    width: 100%;
+    flex-shrink: 0;
 }
 .text {
     transition: all 0.8s ease 0.1s;
 }
 .slider-text {
     display: flex;
-    width: 3.4rem;
+    width: 30rem;
+    overflow: hidden;
 }
 .text {
     margin: 0 37rem 0 0;
@@ -151,11 +161,27 @@ html {
     transform: translateX(0);
 }
 #r2:checked ~ .slider-footer .slider-text .text {
-    transform: translateX(-710%);
+    transform: translateX(-535%);
 }
 #r3:checked ~ .slider-footer .slider-text .text {
-    transform: translateX(-1420%);
+    transform: translateX(-1070%);
 }
 #r4:checked ~ .slider-footer .slider-text .text {
-    transform: translateX(-2130%);
+    transform: translateX(-1605%);
+}
+/* responsive */
+@media screen and (max-width: 650px) {
+    .wrapper {
+        height: 100%;
+    }
+    .slider-footer {
+        flex-direction: column;
+    }
+    .slider-button-box {
+        order: 1;
+        justify-content: center;
+    }
+    .slider-text {
+        order: 2;
+    }
 }
