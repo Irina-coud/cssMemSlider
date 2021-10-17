@@ -34,8 +34,6 @@ img {
 }
 html,
 body {
-    font-size: 14px;
-    line-height: 1;
     height: 100%;
 }
 input[type="text"],
@@ -102,7 +100,7 @@ html {
 }
 .text {
     margin: 0 37rem 0 0;
-    font-size: 25px;
+    font-size: 2.5rem;
 }
 .slider-button-box {
     display: flex;
@@ -112,8 +110,8 @@ html {
 }
 .custom-button {
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 2rem;
+    height: 2rem;
     background: rgb(44, 44, 116);
     border-radius: 50%;
     cursor: pointer;
@@ -123,7 +121,7 @@ html {
 #r2:checked ~ .slider-footer .slider-button-box .two .custom-button,
 #r3:checked ~ .slider-footer .slider-button-box .three .custom-button,
 #r4:checked ~ .slider-footer .slider-button-box .four .custom-button {
-    border: 3px solid rgb(44, 44, 116);
+    border: 0.3rem solid rgb(44, 44, 116);
     background: transparent;
 }
 #r1:hover ~ .slider-footer .slider-button-box .one .custom-button,
@@ -142,7 +140,7 @@ html {
 #r2:checked:hover ~ .slider-footer .slider-button-box .two .custom-button,
 #r3:checked:hover ~ .slider-footer .slider-button-box .three .custom-button,
 #r4:checked:hover ~ .slider-footer .slider-button-box .four .custom-button {
-    border: 3px solid yellow;
+    border: 0.3rem solid yellow;
     background: transparent;
 }
 #r1:checked ~ .slider .slider-item {
@@ -170,7 +168,7 @@ html {
     transform: translateX(-1605%);
 }
 /* responsive */
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 65rem) {
     .wrapper {
         height: 100%;
     }
