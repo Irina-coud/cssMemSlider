@@ -1,0 +1,185 @@
+/* normalize */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+ol li,
+ul li {
+    list-style: none;
+}
+a,
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+img {
+    vertical-align: top;
+    max-width: 100%;
+    height: auto;
+}
+html,
+body {
+    height: 100%;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+}
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+html {
+    scroll-behavior: smooth;
+}
+/*  */
+html {
+    font-size: 62.5%;
+}
+.radio {
+    display: none;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    padding: 0 5%;
+}
+
+.slider {
+    display: flex;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto 2% auto;
+}
+.slider-footer {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 100%;
+    max-width: 60rem;
+}
+.slider-item {
+    transition: all 0.6s ease 0s;
+    width: 100%;
+    flex-shrink: 0;
+}
+.text {
+    transition: all 0.8s ease 0.1s;
+}
+.slider-text {
+    display: flex;
+    width: 30rem;
+    overflow: hidden;
+}
+.text {
+    margin: 0 37rem 0 0;
+    font-size: 2.5rem;
+}
+.slider-button-box {
+    display: flex;
+}
+.label {
+    cursor: pointer;
+}
+.custom-button {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    background: rgb(44, 44, 116);
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 0 2rem 1rem;
+}
+#r1:checked ~ .slider-footer .slider-button-box .one .custom-button,
+#r2:checked ~ .slider-footer .slider-button-box .two .custom-button,
+#r3:checked ~ .slider-footer .slider-button-box .three .custom-button,
+#r4:checked ~ .slider-footer .slider-button-box .four .custom-button {
+    border: 0.3rem solid rgb(44, 44, 116);
+    background: transparent;
+}
+#r1:hover ~ .slider-footer .slider-button-box .one .custom-button,
+#r2:hover ~ .slider-footer .slider-button-box .two .custom-button,
+#r3:hover ~ .slider-footer .slider-button-box .three .custom-button,
+#r4:hover ~ .slider-footer .slider-button-box .four .custom-button {
+    background: yellow;
+}
+#r1:active ~ .slider-footer .slider-button-box .one .custom-button,
+#r2:active ~ .slider-footer .slider-button-box .two .custom-button,
+#r3:active ~ .slider-footer .slider-button-box .three .custom-button,
+#r4:active ~ .slider-footer .slider-button-box .four .custom-button {
+    opacity: 0.3;
+}
+#r1:checked:hover ~ .slider-footer .slider-button-box .one .custom-button,
+#r2:checked:hover ~ .slider-footer .slider-button-box .two .custom-button,
+#r3:checked:hover ~ .slider-footer .slider-button-box .three .custom-button,
+#r4:checked:hover ~ .slider-footer .slider-button-box .four .custom-button {
+    border: 0.3rem solid yellow;
+    background: transparent;
+}
+#r1:checked ~ .slider .slider-item {
+    transform: translateX(0);
+}
+#r2:checked ~ .slider .slider-item {
+    transform: translateX(-100%);
+}
+#r3:checked ~ .slider .slider-item {
+    transform: translateX(-200%);
+}
+#r4:checked ~ .slider .slider-item {
+    transform: translateX(-300%);
+}
+#r1:checked ~ .slider-footer .slider-text .text {
+    transform: translateX(0);
+}
+#r2:checked ~ .slider-footer .slider-text .text {
+    transform: translateX(-535%);
+}
+#r3:checked ~ .slider-footer .slider-text .text {
+    transform: translateX(-1070%);
+}
+#r4:checked ~ .slider-footer .slider-text .text {
+    transform: translateX(-1605%);
+}
+/* responsive */
+@media screen and (max-width: 65rem) {
+    .wrapper {
+        height: 100%;
+    }
+    .slider-footer {
+        flex-direction: column;
+    }
+    .slider-button-box {
+        order: 1;
+        justify-content: center;
+    }
+    .slider-text {
+        order: 2;
+    }
+}
