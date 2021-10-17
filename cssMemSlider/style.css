@@ -109,3 +109,29 @@ html {
     cursor: pointer;
     margin: 0 0 2rem 1rem;
 }
+#r1:checked ~ .slider-footer .slider-button-box .one .custom-button,
+#r2:checked ~ .slider-footer .slider-button-box .two .custom-button,
+#r3:checked ~ .slider-footer .slider-button-box .three .custom-button,
+#r4:checked ~ .slider-footer .slider-button-box .four .custom-button {
+    border: 3px solid rgb(44, 44, 116);
+    background: transparent;
+}
+#r1:hover ~ .slider-footer .slider-button-box .one .custom-button,
+#r2:hover ~ .slider-footer .slider-button-box .two .custom-button,
+#r3:hover ~ .slider-footer .slider-button-box .three .custom-button,
+#r4:hover ~ .slider-footer .slider-button-box .four .custom-button {
+    background: yellow;
+}
+#r1:active ~ .slider-footer .slider-button-box .one .custom-button,
+#r2:active ~ .slider-footer .slider-button-box .two .custom-button,
+#r3:active ~ .slider-footer .slider-button-box .three .custom-button,
+#r4:active ~ .slider-footer .slider-button-box .four .custom-button {
+    opacity: 0.3;
+}
+#r1:checked:hover ~ .slider-footer .slider-button-box .one .custom-button,
+#r2:checked:hover ~ .slider-footer .slider-button-box .two .custom-button,
+#r3:checked:hover ~ .slider-footer .slider-button-box .three .custom-button,
+#r4:checked:hover ~ .slider-footer .slider-button-box .four .custom-button {
+    border: 3px solid yellow;
+    background: transparent;
+}
