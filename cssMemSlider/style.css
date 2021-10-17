@@ -55,3 +55,57 @@ html {
     scroll-behavior: smooth;
 }
 /*  */
+.radio {
+    display: none;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    padding: 0 5%;
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+    width: 42.9rem;
+    margin: 0 auto 2% auto;
+}
+.slider-footer {
+    display: flex;
+    width: 42.9rem;
+    margin: 0 auto;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.slider-item {
+    transition: all 0.6s ease 0s;
+}
+.text {
+    transition: all 0.8s ease 0.1s;
+}
+.slider-text {
+    display: flex;
+    width: 3.4rem;
+}
+.text {
+    margin: 0 37rem 0 0;
+    font-size: 25px;
+}
+.slider-button-box {
+    display: flex;
+}
+.label {
+    cursor: pointer;
+}
+.custom-button {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: rgb(44, 44, 116);
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 0 2rem 1rem;
+}
