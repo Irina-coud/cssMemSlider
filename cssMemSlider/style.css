@@ -147,3 +147,15 @@ html {
 #r4:checked ~ .slider .slider-item {
     transform: translateX(-300%);
 }
+#r1:checked ~ .slider-footer .slider-text .text {
+    transform: translateX(0);
+}
+#r2:checked ~ .slider-footer .slider-text .text {
+    transform: translateX(-710%);
+}
+#r3:checked ~ .slider-footer .slider-text .text {
+    transform: translateX(-1420%);
+}
+#r4:checked ~ .slider-footer .slider-text .text {
+    transform: translateX(-2130%);
+}
